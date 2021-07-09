@@ -17,14 +17,13 @@ jobs:
       - name: Gather build artifacts
         run: |
           mkdir build
-          mv example-*.pdf build/
-          mv example-*.png build/
+          mv *.pdf build/
           cp -r README.md .github/_config.yml build/
       - name: Publish to GitHub pages
         if: success() && github.ref == 'refs/heads/main'
         uses: crazy-max/ghaction-github-pages@v1
         with:
           target_branch: gh-pages
-          build_dir: ./
+          build_dir: build/
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
