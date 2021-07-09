@@ -9,6 +9,7 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
       - name: Compile LaTeX document
+        working-directory: src
         uses: xu-cheng/latex-action@v2
         with:
           root_file: src/main.tex
