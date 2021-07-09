@@ -1,0 +1,19 @@
+\subsection{Moore--Penrose inverse}
+For $A \in \mathbb{C}^{n \times m}$  a pseudo-inverse of $A$ is defined as a matrix 
+$ A^{\dagger} \in \mathbb{C}^{m \times n}$ satisfying:
+
+\begin{multicols}{2}
+	\begin{enumerate}
+ 	 \item $AA^{\dagger}A = A$
+ 	 \item $A^{\dagger}AA^{\dagger} = A^{\dagger}$
+	  \item $(AA^{\dagger})^{*} = AA^{\dagger}$
+	  \item $(A^{\dagger}A)^{*} = A^{\dagger}A$
+	\end{enumerate}
+\end{multicols}
+
+When $A$ has linearly independent columns: \\
+$$A^{\dagger} = (AA^*)^{-1}A^* => A^{\dagger}A = I$$
+When $A$ has linearly independent rows: \\
+$$A^{\dagger} = A^*(AA^*)^{-1} => AA^{\dagger} = I$$
+
+\texttt{numpy.linalg.pinv()} / \texttt{PINV()}

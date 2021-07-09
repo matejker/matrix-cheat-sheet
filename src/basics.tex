@@ -1,0 +1,14 @@
+\subsection{Inverse matrix}
+A matrix $A \in \mathbb{C}^{n \times n}$ is called invertible if exists an inverse matrix  $B \in \mathbb{C}^{n \times n}$ such that:
+$$AB = BA = I_n$$
+\texttt{numpy.linalg.inv()} / \texttt{INV()}
+
+\subsection{Hermitian matrix}
+For matrix $(a_{ij}) = A \in \mathbb{C}^{n \times m}$  a hermitian is $A^*$
+$$A^* = \overline{A}^\top = (\overline{a}_{ji})$$
+\textit{Often denoted as conjugate transpose.} \\ 
+\texttt{A.H or A.getH()} / \texttt{A'}
+
+\subsection{Unitary matrix}
+A matrix $U \in \mathbb{C}^{n \times m}$ is unitary if its hermitian is its inverse.
+$$U^*U = UU^* = I$$
