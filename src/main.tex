@@ -8,6 +8,8 @@
 \usepackage{amsmath}
 \usepackage{listings}
 \usepackage{multicol}
+\usepackage{mathtools}
+\newcommand{\defeq}{\vcentcolon=}
 
 % To make this come out properly in landscape mode, do one of the following
 % 1.
@@ -112,12 +114,13 @@ A = (a_{ij}) = \begin{bmatrix}
     \end{bmatrix}
 \in \mathbb{K}^{n\times m}$$
 
-\input{src/basics}
+\input{basics}
+\input{eigenvalues/definition}
 
-\input{src/moore-penrose}
+\input{moore-penrose}
  
 \section{Matrix decomposition}
-\input{src/decompositions/svd}
+\input{decompositions/svd}
 
 
 \rule{0.3\linewidth}{0.25pt}
